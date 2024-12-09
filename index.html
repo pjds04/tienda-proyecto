@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Proyecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#carrito" id="ver-carrito">Carrito</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-container" id="productos-container">
+            <!-- Los productos se llenarán con JavaScript -->
+        </div>
+    </section>
+
+    <section id="carrito" class="oculto">
+        <h2>Tu Carrito</h2>
+        <div id="carrito-container">
+            <!-- Los productos del carrito se llenarán con JavaScript -->
+        </div>
+        <p id="total">Total: $0</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o necesitas ayuda? Envíanos un mensaje y te responderemos lo antes posible.</p>
+        <form action="https://formspree.io/f/xzzbqzzn" method="POST">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2024 Tienda Proyecto</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
